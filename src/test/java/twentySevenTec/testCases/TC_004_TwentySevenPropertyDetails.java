@@ -17,6 +17,7 @@ public class TC_004_TwentySevenPropertyDetails extends twentySevenBaseClass
 		Thread.sleep(3000);
 		
 		logger.info("Login Successfull for Property Details TC");
+		ClickonStartButton();
 		
 		PropertyDetails p1=new PropertyDetails(driver);
 		p1.GetPropertyDetails();

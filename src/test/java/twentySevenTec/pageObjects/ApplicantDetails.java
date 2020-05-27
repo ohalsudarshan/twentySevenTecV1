@@ -17,8 +17,6 @@ public class ApplicantDetails {
 
 	public void GetApplicantDetails() throws Exception
 	{
-		driver.findElement(By.id("startBtn")).click();
-		Thread.sleep(3000);
 		driver.findElement(By.xpath("/html/body/div[3]/div[1]/form/div[2]/div/div/div[3]/div/ul/li[2]/a")).click();
 		
 		

@@ -15,8 +15,7 @@ public class PropertyDetails {
 	}
 
 		public void GetPropertyDetails() throws Exception
-		{		driver.findElement(By.id("startBtn")).click();
-				Thread.sleep(3000);
+		{		
 				driver.findElement(By.xpath("//*[@id=\"hr1\"]/div/ul/li[3]/a")).click();
 				driver.findElement(By.id("PropertyDetail_PropertyLocation_button")).click();
 				driver.findElement(By.linkText("England")).click();

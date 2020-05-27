@@ -15,8 +15,10 @@ public class TC_003_TwentySevenApplicantDetails extends twentySevenBaseClass{
 		lp.setUsername(username);
 		lp.setPassword(password);
 		lp.clksubmitbtn();
-		
+				
 		logger.info("Logged in Successfully for Applicant Details test case");
+		
+		ClickonStartButton();
 		
 		ApplicantDetails ad=new ApplicantDetails(driver);
 		ad.GetApplicantDetails();
@@ -27,6 +29,8 @@ public class TC_003_TwentySevenApplicantDetails extends twentySevenBaseClass{
 		logger.info("Employment Details entered successfully");
 		ad.getOutgoingDetails();
 		logger.info("Outgoing Details entered successfully");
+		
+		
 		
 	}
 

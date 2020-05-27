@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TwentySevenTecV1">
-              <span class="suite-name border-passed">TwentySevenTecV1</span>
+              <span class="suite-name border-failed">TwentySevenTecV1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,36 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-TwentySevenTecV1" class="hide-methods passed suite-TwentySevenTecV1"> (hide)</a> <!-- hide-methods passed suite-TwentySevenTecV1 -->
-                      <a href="#" panel-name="suite-TwentySevenTecV1" class="show-methods passed suite-TwentySevenTecV1"> (show)</a> <!-- show-methods passed suite-TwentySevenTecV1 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TwentySevenTecV1" class="hide-methods failed suite-TwentySevenTecV1"> (hide)</a> <!-- hide-methods failed suite-TwentySevenTecV1 -->
+                      <a href="#" panel-name="suite-TwentySevenTecV1" class="show-methods failed suite-TwentySevenTecV1"> (show)</a> <!-- show-methods failed suite-TwentySevenTecV1 -->
                     </span>
-                    <div class="method-list-content passed suite-TwentySevenTecV1">
+                    <div class="method-list-content failed suite-TwentySevenTecV1">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TwentySevenTecV1" title="twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails" hash-for-method="ApplicantDetails">ApplicantDetails</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TwentySevenTecV1" title="twentySevenTec.testCases.TC_006_TwentySevenProductSelection" hash-for-method="ProductSelection">ProductSelection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TwentySevenTecV1" title="twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements" hash-for-method="MortgageRequirements">MortgageRequirements</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TwentySevenTecV1" title="twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails" hash-for-method="PropertyDetails">PropertyDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TwentySevenTecV1" title="twentySevenTec.testCases.TC_001_TwentySevenTecLogin" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-TwentySevenTecV1 -->
+                    </div> <!-- method-list-content failed suite-TwentySevenTecV1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,66 +117,43 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TwentySevenTecV1" class="panel TwentySevenTecV1">
-          <div class="suite-TwentySevenTecV1-class-passed">
+          <div class="suite-TwentySevenTecV1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails</span>
+              <img src="failed.png"/>
+              <span class="class-name">twentySevenTec.testCases.TC_006_TwentySevenProductSelection</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ApplicantDetails">
-                  </a> <!-- ApplicantDetails -->
-                  <span class="method-name">ApplicantDetails</span>
+                  <a name="ProductSelection">
+                  </a> <!-- ProductSelection -->
+                  <span class="method-name">ProductSelection</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #btn\-apply\-for\-mortgage\-available
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LKNDSS5CJCRQ2&apos;, ip: &apos;192.168.43.68&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 53284, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e48ef408-90ad-4a4c-ab5d-6cd491a2f070
+*** Element info: {Using=id, value=btn-apply-for-mortgage-available}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at twentySevenTec.pageObjects.ProductSelection.SelectChorleyBSProduct(ProductSelection.java:29)
+	at twentySevenTec.testCases.TC_006_TwentySevenProductSelection.ProductSelection(TC_006_TwentySevenProductSelection.java:26)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TwentySevenTecV1-class-passed -->
-          <div class="suite-TwentySevenTecV1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="MortgageRequirements">
-                  </a> <!-- MortgageRequirements -->
-                  <span class="method-name">MortgageRequirements</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TwentySevenTecV1-class-passed -->
-          <div class="suite-TwentySevenTecV1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">twentySevenTec.testCases.TC_001_TwentySevenTecLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TwentySevenTecV1-class-passed -->
-          <div class="suite-TwentySevenTecV1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="PropertyDetails">
-                  </a> <!-- PropertyDetails -->
-                  <span class="method-name">PropertyDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TwentySevenTecV1-class-passed -->
+          </div> <!-- suite-TwentySevenTecV1-class-failed -->
         </div> <!-- panel TwentySevenTecV1 -->
         <div panel-name="test-xml-TwentySevenTecV1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -208,10 +170,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;TwentySevenTec Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;twentySevenTec.testCases.TC_001_TwentySevenTecLogin&quot;/&gt;
-      &lt;class name=&quot;twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements&quot;/&gt;
-      &lt;class name=&quot;twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails&quot;/&gt;
-      &lt;class name=&quot;twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails&quot;/&gt;
+      &lt;class name=&quot;twentySevenTec.testCases.TC_006_TwentySevenProductSelection&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TwentySevenTec Test --&gt;
 &lt;/suite&gt; &lt;!-- TwentySevenTecV1 --&gt;
@@ -225,7 +184,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TwentySevenTec Test (4 classes)</span>
+                <span class="test-name">TwentySevenTec Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -251,28 +210,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'MortgageRequirements')
-data.setCell(0, 2, 'twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements')
-data.setCell(0, 3, 32888);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ApplicantDetails')
-data.setCell(1, 2, 'twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails')
-data.setCell(1, 3, 23813);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PropertyDetails')
-data.setCell(2, 2, 'twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails')
-data.setCell(2, 3, 18142);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginTest')
-data.setCell(3, 2, 'twentySevenTec.testCases.TC_001_TwentySevenTecLogin')
-data.setCell(3, 3, 1902);
+data.setCell(0, 1, 'ProductSelection')
+data.setCell(0, 2, 'twentySevenTec.testCases.TC_006_TwentySevenProductSelection')
+data.setCell(0, 3, 36382);
 window.suiteTableData['TwentySevenTecV1']= { tableData: data, tableDiv: 'times-div-TwentySevenTecV1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-TwentySevenTecV1">
               </div> <!-- times-div-TwentySevenTecV1 -->
             </div> <!-- times-div -->
@@ -298,63 +245,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">twentySevenTec.testCases.TC_001_TwentySevenTecLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">twentySevenTec.testCases.TC_006_TwentySevenProductSelection</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">6221 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ProductSelection</span>
+                <span class="method-start">6368 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8136 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">10927 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">MortgageRequirements</span>
-                <span class="method-start">18122 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">51011 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">53454 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">ApplicantDetails</span>
-                <span class="method-start">58972 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">82787 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">83944 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">PropertyDetails</span>
-                <span class="method-start">89582 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">107725 ms</span>
+                <span class="method-start">42762 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

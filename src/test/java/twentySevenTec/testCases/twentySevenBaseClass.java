@@ -8,6 +8,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -66,7 +67,7 @@ public class twentySevenBaseClass{
 	@AfterClass
 	public void tearDown()
 	{
-		driver.close();
+//		driver.close();
 	}
 	
 	public void captureScreen(WebDriver driver, String tname) throws IOException
@@ -78,6 +79,10 @@ public class twentySevenBaseClass{
 		System.out.println("Screenshot Taken");
 	}	
 	
+	public void ClickonStartButton()
+	{
+		driver.findElement(By.id("startBtn")).click();
+	}
 	public String randomString()
 	{
 		String generatedstring=RandomStringUtils.randomAlphabetic(8);
@@ -101,4 +106,10 @@ public class twentySevenBaseClass{
 			return false;
 		}
 	}
+	
+	public void SearchMortgageBtn()
+	{
+		driver.findElement(By.xpath("/html/body/div[3]/div[1]/form/div[2]/div/div/div[3]/div/div/footer/section/button")).click();
+	}
+	
 }

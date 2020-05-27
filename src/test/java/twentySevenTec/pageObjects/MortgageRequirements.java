@@ -19,7 +19,6 @@ public class MortgageRequirements
 	
 	public void GetMortgageRequirements()
 	{
-		ldriver.findElement(By.id("startBtn")).click();
 		ldriver.findElement(By.id("CoreRequirement_MortgageType_buttonlbl")).click();
 		ldriver.findElement(By.linkText("Standard Residential")).click();
 		ldriver.findElement(By.id("CoreRequirement_ReasonForMortgage_button")).click();
@@ -31,7 +30,7 @@ public class MortgageRequirements
 		ldriver.findElement(By.id("CoreRequirement_LoanTerm")).sendKeys("15");
 		ldriver.findElement(By.id("CoreRequirement_PaymentMethod_buttonlbl")).click();
 		ldriver.findElement(By.linkText("Repayment")).click();
-		ldriver.findElement(By.xpath("/html/body/div[3]/div[1]/form/div[2]/div/div/div[3]/div/div/footer/section/button")).click();
+
 
 	}
 	

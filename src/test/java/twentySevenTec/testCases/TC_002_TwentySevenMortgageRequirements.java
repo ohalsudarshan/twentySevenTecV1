@@ -15,6 +15,7 @@ public class TC_002_TwentySevenMortgageRequirements extends twentySevenBaseClass
 		lp1.setUsername(username);
 		lp1.setPassword(password);
 		lp1.clksubmitbtn();
+		ClickonStartButton();
 		
 		logger.info("Logged in Successfully for MortgageRequirements test case");
 		
