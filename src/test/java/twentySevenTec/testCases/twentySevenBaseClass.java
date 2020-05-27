@@ -28,11 +28,13 @@ public class twentySevenBaseClass {
 		PropertyConfigurator.configure("log4j.properties");
 	}
 	
-
+	
 	@AfterClass
 	public void tearDown()
 	{
 		driver.close();
 	}
 	
+
+
 }
