@@ -12,7 +12,6 @@ public class TC_001_TwentySevenTecLogin extends twentySevenBaseClass {
 	@Test
 	public void loginTest() throws IOException 
 	{
-		driver.get(baseURL);
 		logger.info("URL is Provided");
 		
 		LoginPage lp=new LoginPage(driver);

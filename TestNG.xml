@@ -3,16 +3,14 @@
 
 <suite name="TwentySevenTecV1">
   
- <!--  <listeners>
- 	 <listener class-name="com.inetBanking.utilities.Reporting"/>
-  </listeners> -->
+ <listeners>
+ 	 <listener class-name="twentySevenTec.utilities.Reporting"/>
+  </listeners>
   
   
-  <test name="TwentySevenTec Test">
-     
+  <test name="TwentySevenTec Test"> 
       
-      
-      <!--  <parameter name="browser" value="firefox"/> -->
+      <parameter name="browser" value="firefox"/>
       <classes>
 	       <class name="twentySevenTec.testCases.TC_001_TwentySevenTecLogin"/>
   	 	   <class name="twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements"/> 

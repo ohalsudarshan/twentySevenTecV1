@@ -2,7 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TwentySevenTecV1]">
   <test thread-count="5" name="TwentySevenTec Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="MortgageRequirements"/>
+        </methods>
+      </class> <!-- twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements -->
+      <class name="twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="ApplicantDetails"/>
+        </methods>
+      </class> <!-- twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails -->
       <class name="twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails">
         <methods>
           <include name="tearDown"/>
@@ -10,6 +25,13 @@
           <include name="PropertyDetails"/>
         </methods>
       </class> <!-- twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails -->
+      <class name="twentySevenTec.testCases.TC_001_TwentySevenTecLogin">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- twentySevenTec.testCases.TC_001_TwentySevenTecLogin -->
     </classes>
   </test> <!-- TwentySevenTec Test(failed) -->
 </suite> <!-- Failed suite [TwentySevenTecV1] -->
