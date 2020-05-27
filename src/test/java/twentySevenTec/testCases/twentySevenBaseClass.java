@@ -67,7 +67,7 @@ public class twentySevenBaseClass{
 	@AfterClass
 	public void tearDown()
 	{
-//		driver.close();
+		driver.close();
 	}
 	
 	public void captureScreen(WebDriver driver, String tname) throws IOException
