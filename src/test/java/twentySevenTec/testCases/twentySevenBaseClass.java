@@ -1,5 +1,7 @@
 package twentySevenTec.testCases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +28,11 @@ public class twentySevenBaseClass {
 
 		logger=Logger.getLogger("TwentySevenTec");
 		PropertyConfigurator.configure("log4j.properties");
+		
+		
+		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	}
 	
 	

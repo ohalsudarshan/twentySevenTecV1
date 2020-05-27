@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TwentySevenTecV1]">
   <test thread-count="5" name="TwentySevenTec Test(failed)">
     <classes>
-      <class name="twentySevenTec.testCases.TC_002_TwentySevenProductSearch">
+      <class name="twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails">
         <methods>
           <include name="tearDown"/>
-          <include name="ProductSearch"/>
           <include name="setup"/>
+          <include name="PropertyDetails"/>
         </methods>
-      </class> <!-- twentySevenTec.testCases.TC_002_TwentySevenProductSearch -->
+      </class> <!-- twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails -->
     </classes>
   </test> <!-- TwentySevenTec Test(failed) -->
 </suite> <!-- Failed suite [TwentySevenTecV1] -->

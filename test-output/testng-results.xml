@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TwentySevenTecV1" duration-ms="41200" started-at="2020-05-27T05:29:40Z" finished-at="2020-05-27T05:30:22Z">
+  <suite name="TwentySevenTecV1" duration-ms="34134" started-at="2020-05-27T08:08:43Z" finished-at="2020-05-27T08:09:17Z">
     <groups>
     </groups>
-    <test name="TwentySevenTec Test" duration-ms="41200" started-at="2020-05-27T05:29:40Z" finished-at="2020-05-27T05:30:22Z">
-      <class name="twentySevenTec.testCases.TC_002_TwentySevenProductSearch">
-        <test-method status="PASS" signature="setup()[pri:0, instance:twentySevenTec.testCases.TC_002_TwentySevenProductSearch@4d1b0d2a]" name="setup" is-config="true" duration-ms="3402" started-at="2020-05-27T05:29:40Z" finished-at="2020-05-27T05:29:44Z">
+    <test name="TwentySevenTec Test" duration-ms="34134" started-at="2020-05-27T08:08:43Z" finished-at="2020-05-27T08:09:17Z">
+      <class name="twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements">
+        <test-method status="PASS" signature="setup()[pri:0, instance:twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements@4d1b0d2a]" name="setup" is-config="true" duration-ms="9458" started-at="2020-05-27T08:08:43Z" finished-at="2020-05-27T08:08:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ProductSearch()[pri:0, instance:twentySevenTec.testCases.TC_002_TwentySevenProductSearch@4d1b0d2a]" name="ProductSearch" duration-ms="36763" started-at="2020-05-27T05:29:44Z" finished-at="2020-05-27T05:30:21Z">
+        <test-method status="PASS" signature="MortgageRequirements()[pri:0, instance:twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements@4d1b0d2a]" name="MortgageRequirements" duration-ms="22134" started-at="2020-05-27T08:08:52Z" finished-at="2020-05-27T08:09:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductSearch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:twentySevenTec.testCases.TC_002_TwentySevenProductSearch@4d1b0d2a]" name="tearDown" is-config="true" duration-ms="1021" started-at="2020-05-27T05:30:21Z" finished-at="2020-05-27T05:30:22Z">
+        </test-method> <!-- MortgageRequirements -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements@4d1b0d2a]" name="tearDown" is-config="true" duration-ms="2526" started-at="2020-05-27T08:09:14Z" finished-at="2020-05-27T08:09:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- twentySevenTec.testCases.TC_002_TwentySevenProductSearch -->
+      </class> <!-- twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements -->
     </test> <!-- TwentySevenTec Test -->
   </suite> <!-- TwentySevenTecV1 -->
 </testng-results>
