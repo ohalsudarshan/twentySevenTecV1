@@ -13,10 +13,13 @@ public class TC_001_TwentySevenTecLogin extends twentySevenBaseClass {
 	public void loginTest() throws IOException 
 	{
 		driver.get(baseURL);
+		logger.info("URL is Provided");
 		
 		LoginPage lp=new LoginPage(driver);
 		lp.setUsername(username);
+		logger.info("Username Provided");
 		lp.setPassword(password);
+		logger.info("Password Provided");
 		lp.clksubmitbtn();
 	
 		String title=(driver.getTitle());
@@ -25,12 +28,12 @@ public class TC_001_TwentySevenTecLogin extends twentySevenBaseClass {
 		if(driver.getTitle().equals(title))
 		{
 			Assert.assertTrue(true);
-			System.out.println("Login Passed");
+			logger.info("Login test passed");
 		}
 		else
 		{
 			Assert.assertTrue(false);
-			System.out.println("Login Failed");
+			logger.info("Login test failed");
 		}
 	}
 
