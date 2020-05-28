@@ -30,7 +30,5 @@ public class ProductSelection {
 		driver.findElement(By.id("bot2-Msg1")).click();
 		Thread.sleep(3000);	
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("/html/body/div[3]/section/section[1]/div/article/div/div/div[2]/button[2]")).click();		
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
 }

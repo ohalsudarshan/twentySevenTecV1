@@ -12,10 +12,7 @@
       
       <parameter name="browser" value="firefox"/>
       <classes>
-      	<class name="twentySevenTec.testCases.TC_001_TwentySevenTecLogin"/>
-      	<class name="twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements"/>
-      	<class name="twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails"/>
-      	<class name="twentySevenTec.testCases.TC_004_TwentySevenPropertyDetails"/>
+      
       	<class name="twentySevenTec.testCases.TC_005_TwentySevenProductSearch"/>
 	       
   	 

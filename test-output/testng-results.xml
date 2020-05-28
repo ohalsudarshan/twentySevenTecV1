@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TwentySevenTecV1" duration-ms="42938" started-at="2020-05-27T14:25:43Z" finished-at="2020-05-27T14:26:26Z">
+  <suite name="TwentySevenTecV1" duration-ms="140106" started-at="2020-05-28T09:43:21Z" finished-at="2020-05-28T09:45:41Z">
     <groups>
     </groups>
-    <test name="TwentySevenTec Test" duration-ms="42938" started-at="2020-05-27T14:25:43Z" finished-at="2020-05-27T14:26:26Z">
-      <class name="twentySevenTec.testCases.TC_006_TwentySevenProductSelection">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:twentySevenTec.testCases.TC_006_TwentySevenProductSelection@2641e737]" name="setup" is-config="true" duration-ms="6363" started-at="2020-05-27T14:25:43Z" finished-at="2020-05-27T14:25:50Z">
+    <test name="TwentySevenTec Test" duration-ms="140106" started-at="2020-05-28T09:43:21Z" finished-at="2020-05-28T09:45:41Z">
+      <class name="twentySevenTec.testCases.TC_005_TwentySevenProductSearch">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:twentySevenTec.testCases.TC_005_TwentySevenProductSearch@2641e737]" name="setup" is-config="true" duration-ms="8390" started-at="2020-05-28T09:43:21Z" finished-at="2020-05-28T09:43:29Z">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="ProductSelection()[pri:0, instance:twentySevenTec.testCases.TC_006_TwentySevenProductSelection@2641e737]" name="ProductSelection" duration-ms="36382" started-at="2020-05-27T14:25:50Z" finished-at="2020-05-27T14:26:26Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="GetProduct()[pri:0, instance:twentySevenTec.testCases.TC_005_TwentySevenProductSearch@2641e737]" name="GetProduct" duration-ms="131409" started-at="2020-05-28T09:43:29Z" finished-at="2020-05-28T09:45:41Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Unable to locate element: #btn\-apply\-for\-mortgage\-available
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Element <button id="f57758_0_button" class="btn btn-default dropdown-toggle btn-dropdownlist control-label required " type="button"> is not clickable at point (856,732) because another element <div id="autosave" class="txt-color-white bg-color-themelight"> obscures it
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'LKNDSS5CJCRQ2', ip: '192.168.43.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 53284, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e48ef408-90ad-4a4c-ab5d-6cd491a2f070
-*** Element info: {Using=id, value=btn-apply-for-mortgage-available}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42812, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ef8d33dc-6b68-45aa-8f3b-c4b98ce7d3a0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #btn\-apply\-for\-mortgage\-available
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button id="f57758_0_button" class="btn btn-default dropdown-toggle btn-dropdownlist control-label required " type="button"> is not clickable at point (856,732) because another element <div id="autosave" class="txt-color-white bg-color-themelight"> obscures it
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'LKNDSS5CJCRQ2', ip: '192.168.43.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 53284, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e48ef408-90ad-4a4c-ab5d-6cd491a2f070
-*** Element info: {Using=id, value=btn-apply-for-mortgage-available}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 42812, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ef8d33dc-6b68-45aa-8f3b-c4b98ce7d3a0
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -49,12 +45,10 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
-at org.openqa.selenium.By$ById.findElement(By.java:218)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-at twentySevenTec.pageObjects.ProductSelection.SelectChorleyBSProduct(ProductSelection.java:29)
-at twentySevenTec.testCases.TC_006_TwentySevenProductSelection.ProductSelection(TC_006_TwentySevenProductSelection.java:26)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at twentySevenTec.pageObjects.FMAEditApplication.UpdateEmploymentandIncomeDetails(FMAEditApplication.java:89)
+at twentySevenTec.testCases.TC_005_TwentySevenProductSearch.GetProduct(TC_005_TwentySevenProductSearch.java:65)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -82,15 +76,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductSelection -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:twentySevenTec.testCases.TC_006_TwentySevenProductSelection@2641e737]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-05-27T14:26:26Z" finished-at="2020-05-27T14:26:26Z">
+        </test-method> <!-- GetProduct -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:twentySevenTec.testCases.TC_005_TwentySevenProductSearch@2641e737]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-05-28T09:45:41Z" finished-at="2020-05-28T09:45:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- twentySevenTec.testCases.TC_006_TwentySevenProductSelection -->
+      </class> <!-- twentySevenTec.testCases.TC_005_TwentySevenProductSearch -->
     </test> <!-- TwentySevenTec Test -->
   </suite> <!-- TwentySevenTecV1 -->
 </testng-results>

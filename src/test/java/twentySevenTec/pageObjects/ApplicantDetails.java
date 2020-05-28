@@ -45,9 +45,9 @@ public class ApplicantDetails {
 	public void getContactDetails()
 	{
 		driver.findElement(By.id("btn-contact-details")).click();
-		driver.findElement(By.id("Client_Applicants_0__HomePhoneDecrypted")).sendKeys("9028040507");
-		driver.findElement(By.id("Client_Applicants_0__WorkPhoneDecrypted")).sendKeys("9028040508");
-		driver.findElement(By.id("Client_Applicants_0__MobilePhoneDecrypted")).sendKeys("9028040509");
+		driver.findElement(By.id("Client_Applicants_0__HomePhoneDecrypted")).sendKeys("09028040507");
+		driver.findElement(By.id("Client_Applicants_0__WorkPhoneDecrypted")).sendKeys("09028040508");
+		driver.findElement(By.id("Client_Applicants_0__MobilePhoneDecrypted")).sendKeys("09028040509");
 		driver.findElement(By.id("Client_Applicants_0__EmailDecrypted")).sendKeys("Sud@gmail.com");
 		driver.findElement(By.xpath("//*[@id=\"manualEditButton1\"]/i")).click();
 		driver.findElement(By.id("Client_Applicants_0__PostcodeDecrypted")).sendKeys("GL52 2NP");

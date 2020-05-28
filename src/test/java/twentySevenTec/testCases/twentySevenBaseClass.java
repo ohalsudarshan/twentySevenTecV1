@@ -67,14 +67,14 @@ public class twentySevenBaseClass{
 	@AfterClass
 	public void tearDown()
 	{
-		driver.close();
+//		driver.close();
 	}
 	
-	public void captureScreen(WebDriver driver, String tname) throws IOException
+	public void captureScreen(WebDriver driver) throws IOException
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
-		File target=new File(System.getProperty("user.dir")+"/Screenshot/"+tname+".png");
+		File target=new File(System.getProperty("user.dir")+"/Screenshot/"+randomString()+".png");
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot Taken");
 	}	
@@ -91,7 +91,7 @@ public class twentySevenBaseClass{
 	
 	public String randomNumber()
 	{
-		String generatedstring2=RandomStringUtils.randomNumeric(5);
+		String generatedstring2=RandomStringUtils.randomNumeric(6);
 		return (generatedstring2);
 	}
 	
@@ -110,6 +110,35 @@ public class twentySevenBaseClass{
 	public void SearchMortgageBtn()
 	{
 		driver.findElement(By.xpath("/html/body/div[3]/div[1]/form/div[2]/div/div/div[3]/div/div/footer/section/button")).click();
+	}
+	
+	public void SelApplicationTypeFMA() throws Exception
+	{
+		driver.findElement(By.xpath("/html/body/div[3]/section/section[1]/div/article/div/div/div[2]/button[2]")).click();		
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		Boolean apptype= driver.getPageSource().contains("Full Mortgage Application");
+		
+		if(apptype==true)
+			
+		{
+			logger.info("Full Mortgage Application Selected");
+		}
+		captureScreen(driver);
+	}
+	public void SelApplicationTypeDIP() throws IOException
+	{
+		driver.findElement(By.xpath("/html/body/div[3]/section/section[1]/div/article/div/div/div[2]/button[1]")).click();		
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		Boolean apptype= driver.getPageSource().contains("Decision In Principle");
+		
+		if(apptype==true)
+			
+		{
+			logger.info("Decision In Principle Application Selected");
+		}
+		captureScreen(driver);
 	}
 	
 }

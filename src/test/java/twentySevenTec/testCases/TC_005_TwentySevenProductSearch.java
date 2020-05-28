@@ -3,6 +3,7 @@ package twentySevenTec.testCases;
 import org.testng.annotations.Test;
 
 import twentySevenTec.pageObjects.ApplicantDetails;
+import twentySevenTec.pageObjects.FMAEditApplication;
 import twentySevenTec.pageObjects.LoginPage;
 import twentySevenTec.pageObjects.MortgageRequirements;
 import twentySevenTec.pageObjects.ProductSelection;
@@ -17,14 +18,15 @@ public class TC_005_TwentySevenProductSearch extends twentySevenBaseClass{
 		lp.setUsername(username);
 		lp.setPassword(password);
 		lp.clksubmitbtn();
-				
+		captureScreen(driver);
 		logger.info("Login Successfull for GetProduct test case");
 		ClickonStartButton();
 		logger.info("Clicked on start button");
+		captureScreen(driver);
 		
 		MortgageRequirements m1=new MortgageRequirements(driver);
 		m1.GetMortgageRequirements();
-		
+		captureScreen(driver);
 		logger.info("Mortgage requirement details updated successfully");
 		
 		ApplicantDetails ad=new ApplicantDetails(driver);
@@ -32,11 +34,11 @@ public class TC_005_TwentySevenProductSearch extends twentySevenBaseClass{
 		ad.getContactDetails();		logger.info("Contact details updated successfully");
 		ad.getEmploymentDetails();	logger.info("Employment details updated successfully");
 		ad.getOutgoingDetails();	logger.info("Outgoing details updated successfully");
-		
+		captureScreen(driver);
 		Thread.sleep(3000);
 		PropertyDetails pd=new PropertyDetails(driver);
 		pd.GetPropertyDetails();	logger.info("Property details updated successfully");
-		
+		captureScreen(driver); 
 		SearchMortgageBtn();
 		
 		String pagetitle=driver.getTitle();
@@ -52,8 +54,20 @@ public class TC_005_TwentySevenProductSearch extends twentySevenBaseClass{
 		
 		ProductSelection ps=new ProductSelection(driver);
 		ps.SelectChorleyBSProduct();
-		
+		captureScreen(driver);
 		logger.info("Product Selection completed");
+		SelApplicationTypeFMA();
+		Thread.sleep(3000);
+		FMAEditApplication f1=new FMAEditApplication(driver);
+		f1.UpdateApplicantDetails();
+		f1.UpdateMortgageRequirements();
+		f1.UpdateDirectDebitDetails();
+		f1.UpdateEmploymentandIncomeDetails();
+		f1.UpdatePropertyDetails();
+		
+		
+		logger.info("Edited All details successfully");
+		
 	}
 
 }

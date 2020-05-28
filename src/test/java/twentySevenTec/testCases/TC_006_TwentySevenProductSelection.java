@@ -23,6 +23,8 @@ public class TC_006_TwentySevenProductSelection extends twentySevenBaseClass{
 		ProductSelection p1=new ProductSelection(driver);
 		p1.SelectChorleyBSProduct();
 		
+		SelApplicationTypeFMA();
+		
 		logger.info("Product Selected Successfully");
 	}
 
