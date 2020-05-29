@@ -62,8 +62,9 @@ public class TC_005_TwentySevenProductSearch extends twentySevenBaseClass{
 		f1.UpdateApplicantDetails();
 		f1.UpdateMortgageRequirements();
 		f1.UpdateDirectDebitDetails();
-		f1.UpdateEmploymentandIncomeDetails();
 		f1.UpdatePropertyDetails();
+		f1.UpdateEmploymentandIncomeDetails();
+		
 		
 		
 		logger.info("Edited All details successfully");

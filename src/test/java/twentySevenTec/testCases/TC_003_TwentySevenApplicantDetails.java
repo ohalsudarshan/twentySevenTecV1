@@ -24,6 +24,7 @@ public class TC_003_TwentySevenApplicantDetails extends twentySevenBaseClass{
 		ad.GetApplicantDetails();
 		logger.info("Applicant Details entered successfully");
 		ad.getContactDetails();
+	//	getAddress();
 		logger.info("Contact Details entered successfully");
 		ad.getEmploymentDetails();
 		logger.info("Employment Details entered successfully");

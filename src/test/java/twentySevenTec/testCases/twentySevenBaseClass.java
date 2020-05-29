@@ -13,9 +13,11 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.internal.MouseAction.Button;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -139,6 +141,37 @@ public class twentySevenBaseClass{
 			logger.info("Decision In Principle Application Selected");
 		}
 		captureScreen(driver);
+	}
+	
+	public void getAddress() throws InterruptedException, IOException
+	{
+		
+		driver.findElement(By.xpath("/html/body/div[3]/div[4]/div[2]/div/div[3]/form/div/div[2]/div[2]/div/div/fieldset/div/div/div[31]/div/div[1]/div/div[1]/span[2]/button")).click();
+		System.out.println("clicked on address");
+		Thread.sleep(3000);
+		
+		if(isAlertPresent()==true)
+		{
+			logger.info("on address details page");
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//*[@id=\"modalAddressform\"]/div[2]/div/fieldset/div[11]/div/button[1]")).click();
+			captureScreen(driver);
+			System.out.println("Moved to address details page");
+			Thread.sleep(3000);
+			driver.findElement(By.id("FlatNumber")).sendKeys("1");
+			driver.findElement(By.id("BuildingName")).sendKeys("1 Warwick Apartments");
+			driver.findElement(By.id("BuildingNumber")).sendKeys("1");
+			driver.findElement(By.id("StreetName")).sendKeys("Warwick Place");
+			driver.findElement(By.id("Town")).sendKeys("Cheltenham");
+			driver.findElement(By.id("County")).sendKeys("Gloucestershire");
+			Thread.sleep(3000);
+			driver.findElement(By.id("CountryId_button")).click();
+			driver.findElement(By.linkText("United Kingdom")).click();
+			logger.info("Address Details updated successfully");
+		}
+	
+		
+		
 	}
 	
 }

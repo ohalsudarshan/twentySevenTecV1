@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import twentySevenTec.testCases.twentySevenBaseClass;;
 
 public class ApplicantDetails {
 	
@@ -49,14 +50,15 @@ public class ApplicantDetails {
 		driver.findElement(By.id("Client_Applicants_0__WorkPhoneDecrypted")).sendKeys("09028040508");
 		driver.findElement(By.id("Client_Applicants_0__MobilePhoneDecrypted")).sendKeys("09028040509");
 		driver.findElement(By.id("Client_Applicants_0__EmailDecrypted")).sendKeys("Sud@gmail.com");
-		driver.findElement(By.xpath("//*[@id=\"manualEditButton1\"]/i")).click();
-		driver.findElement(By.id("Client_Applicants_0__PostcodeDecrypted")).sendKeys("GL52 2NP");
-		driver.findElement(By.id("Client_Applicants_0__FlatNumberDecrypted")).sendKeys("1");
-		driver.findElement(By.id("Client_Applicants_0__BuildingNameDecrypted")).sendKeys("Kaveri Niwas");
-		driver.findElement(By.id("Client_Applicants_0__BuildingNumberDecrypted")).sendKeys("1");
-		driver.findElement(By.id("Client_Applicants_0__StreetNameDecrypted")).sendKeys("Chinchwad");
-		driver.findElement(By.id("Client_Applicants_0__TownDecrypted")).sendKeys("Pune");
-		driver.findElement(By.id("Client_Applicants_0__CountyDecrypted")).sendKeys("MH");
+		
+//		driver.findElement(By.xpath("//*[@id=\"manualEditButton1\"]/i")).click();
+//		driver.findElement(By.id("Client_Applicants_0__PostcodeDecrypted")).sendKeys("GL52 2NP");
+//		driver.findElement(By.id("Client_Applicants_0__FlatNumberDecrypted")).sendKeys("1");
+//		driver.findElement(By.id("Client_Applicants_0__BuildingNameDecrypted")).sendKeys("Kaveri Niwas");
+//		driver.findElement(By.id("Client_Applicants_0__BuildingNumberDecrypted")).sendKeys("1");
+//		driver.findElement(By.id("Client_Applicants_0__StreetNameDecrypted")).sendKeys("Chinchwad");
+//		driver.findElement(By.id("Client_Applicants_0__TownDecrypted")).sendKeys("Pune");
+//		driver.findElement(By.id("Client_Applicants_0__CountyDecrypted")).sendKeys("MH");
 	
 	}
 	

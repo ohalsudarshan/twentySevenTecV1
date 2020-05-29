@@ -34,7 +34,7 @@ public class FMAEditApplication extends twentySevenBaseClass{
 		 	driver.findElement(By.id("f57687_0")).sendKeys(nin); //Applicant1National Insurance Number
 		 	driver.findElement(By.id("f57690_0_button")).click();
 		 	driver.findElement(By.linkText("Owner Occupied")).click();//Applicant1Current residential status?
-
+		 	getAddress();
 		 	driver.findElement(By.xpath("//*[@id=\"f57738_0_ctrl\"]/table/tbody/tr/td[3]/label")).click();		//Mortgaged?
 
 		 	driver.findElement(By.id("f57716_0_button")).click();
@@ -85,22 +85,19 @@ public class FMAEditApplication extends twentySevenBaseClass{
 			driver.findElement(By.id("f57799_0")).sendKeys("employer1@gmail.com");
 			driver.findElement(By.id("f57757_0")).sendKeys("09988333322");
 			
-			
+			Thread.sleep(10000);
 			driver.findElement(By.id("f57758_0_button")).click();
 			driver.findElement(By.linkText("Full Time")).click();
-
-			
-			Thread.sleep(3000);
-			driver.findElement(By.id("f57768_0_button")).click();
-			driver.findElement(By.linkText("Information Technology")).click();
-			
-			Thread.sleep(3000);
+//			Thread.sleep(10000);
+//			driver.findElement(By.id("f57768_0_button")).click();
+//			driver.findElement(By.linkText("Animal Care")).click();
+			Thread.sleep(10000);
 			driver.findElement(By.id("f57770_0_button")).click();
 			driver.findElement(By.linkText("Weekly")).click();
-			Thread.sleep(3000);
+			Thread.sleep(10000);
 			driver.findElement(By.id("f57771_0_button")).click();
 			driver.findElement(By.linkText("Direct to Bank")).click();
-			Thread.sleep(3000);
+			Thread.sleep(10000);
 			driver.findElement(By.id("f57772_0")).sendKeys("9988");
 			captureScreen(driver);
 			logger.info("Employment Details updated successfully");
@@ -114,21 +111,25 @@ public class FMAEditApplication extends twentySevenBaseClass{
 		  		driver.findElement(By.id("f57973_button")).click(); // Type of Valuation required
 		  		driver.findElement(By.linkText("Mortgage Valuation")).click();
 		  		driver.findElement(By.id("f61366")).sendKeys("5000");
-		  		Thread.sleep(2000);
+		  		Thread.sleep(10000);
 		  		driver.findElement(By.xpath("//*[@id=\"f57947_button\"]")).click(); // Which new home guarantee does it have?
 		  		driver.findElement(By.linkText("NHBC")).click();
-		  		Thread.sleep(3000);		  	
+		  		Thread.sleep(10000);	  	
 		  		driver.findElement(By.id("f57950")).sendKeys("2");
 		  		driver.findElement(By.id("f57951")).sendKeys("3");
 		  		driver.findElement(By.id("f57952")).sendKeys("4");
 		  		driver.findElement(By.id("f57953")).sendKeys("5");
 		  		driver.findElement(By.id("f57954")).sendKeys("6");
 		  		driver.findElement(By.id("f57955")).sendKeys("1");
-		  		Thread.sleep(2000); 		
+		  		Thread.sleep(10000);	
 		  		driver.findElement(By.id("f61359_button")).click(); // Property Region
-		  		driver.findElement(By.linkText("North West")).click();
+		  		Thread.sleep(3000);
+		  		driver.findElement(By.linkText("London")).click();
+		  		Thread.sleep(10000);
 		  		driver.findElement(By.id("f61360_button")).click();
+		  		Thread.sleep(3000);
 		  		driver.findElement(By.linkText("England")).click();
+		  		Thread.sleep(10000);
 		  		captureScreen(driver);
 				logger.info("Property Details updated successfully");
 		}
