@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TwentySevenTecV1" duration-ms="95971" started-at="2020-05-29T09:28:18Z" finished-at="2020-05-29T09:29:54Z">
+  <suite name="TwentySevenTecV1" duration-ms="100409" started-at="2020-06-05T15:52:35Z" finished-at="2020-06-05T15:54:15Z">
     <groups>
     </groups>
-    <test name="TwentySevenTec Test" duration-ms="95971" started-at="2020-05-29T09:28:18Z" finished-at="2020-05-29T09:29:54Z">
-      <class name="twentySevenTec.testCases.TC007_AddressConfirmation">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:twentySevenTec.testCases.TC007_AddressConfirmation@2641e737]" name="setup" is-config="true" duration-ms="6538" started-at="2020-05-29T09:28:18Z" finished-at="2020-05-29T09:28:25Z">
+    <test name="TwentySevenTec Test" duration-ms="100409" started-at="2020-06-05T15:52:35Z" finished-at="2020-06-05T15:54:15Z">
+      <class name="twentySevenTec.testCases.AllDemoTesting">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:twentySevenTec.testCases.AllDemoTesting@2641e737]" name="setup" is-config="true" duration-ms="3776" started-at="2020-06-05T15:52:35Z" finished-at="2020-06-05T15:52:39Z">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="AddressConfirmation()[pri:0, instance:twentySevenTec.testCases.TC007_AddressConfirmation@2641e737]" name="AddressConfirmation" duration-ms="89235" started-at="2020-05-29T09:28:25Z" finished-at="2020-05-29T09:29:54Z">
-          <exception class="org.openqa.selenium.NoSuchFrameException">
+        <test-method status="FAIL" signature="CheckAnything()[pri:0, instance:twentySevenTec.testCases.AllDemoTesting@2641e737]" name="CheckAnything" duration-ms="96422" started-at="2020-06-05T15:52:39Z" finished-at="2020-06-05T15:54:15Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Unable to locate frame: beaa2f9e-8c34-48b4-ab42-08ac60853944
+              <![CDATA[Element <a id="collapsetrigger-s1905" class="txt-color-white  collapsed" href="#collapse-s1905"> is not clickable at point (869,731) because another element <div id="autosave" class="txt-color-white bg-color-themelight"> obscures it
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'LKNDSS5CJCRQ2', ip: '192.168.43.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+System info: host: 'LKNDSS5CJCRQ2', ip: '192.168.0.148', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 59140, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 848d6722-a16c-4bab-822e-d8aa187b179f]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 95812, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f702c337-63ba-4c37-b325-9c1853e1bc4f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchFrameException: Unable to locate frame: beaa2f9e-8c34-48b4-ab42-08ac60853944
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a id="collapsetrigger-s1905" class="txt-color-white  collapsed" href="#collapse-s1905"> is not clickable at point (869,731) because another element <div id="autosave" class="txt-color-white bg-color-themelight"> obscures it
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'LKNDSS5CJCRQ2', ip: '192.168.43.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+System info: host: 'LKNDSS5CJCRQ2', ip: '192.168.0.148', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 59140, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 848d6722-a16c-4bab-822e-d8aa187b179f
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 95812, moz:profile: C:\Users\p10482934\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f702c337-63ba-4c37-b325-9c1853e1bc4f
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -45,10 +45,10 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:891)
-at twentySevenTec.testCases.twentySevenBaseClass.getAddress(twentySevenBaseClass.java:152)
-at twentySevenTec.pageObjects.FMAEditApplication.UpdateApplicantDetails(FMAEditApplication.java:37)
-at twentySevenTec.testCases.TC007_AddressConfirmation.AddressConfirmation(TC007_AddressConfirmation.java:43)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at twentySevenTec.pageObjects.EditEmploymentAndIncomeDetails.EditEmploymentAndIncome(EditEmploymentAndIncomeDetails.java:24)
+at twentySevenTec.testCases.AllDemoTesting.CheckAnything(AllDemoTesting.java:49)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -76,15 +76,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddressConfirmation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:twentySevenTec.testCases.TC007_AddressConfirmation@2641e737]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-05-29T09:29:54Z" finished-at="2020-05-29T09:29:54Z">
+        </test-method> <!-- CheckAnything -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:twentySevenTec.testCases.AllDemoTesting@2641e737]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-06-05T15:54:15Z" finished-at="2020-06-05T15:54:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- twentySevenTec.testCases.TC007_AddressConfirmation -->
+      </class> <!-- twentySevenTec.testCases.AllDemoTesting -->
     </test> <!-- TwentySevenTec Test -->
   </suite> <!-- TwentySevenTecV1 -->
 </testng-results>

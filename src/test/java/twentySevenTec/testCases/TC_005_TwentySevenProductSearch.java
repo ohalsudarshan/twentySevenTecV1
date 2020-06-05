@@ -3,7 +3,7 @@ package twentySevenTec.testCases;
 import org.testng.annotations.Test;
 
 import twentySevenTec.pageObjects.ApplicantDetails;
-import twentySevenTec.pageObjects.FMAEditApplication;
+import twentySevenTec.pageObjects.EditApplicantDetails;
 import twentySevenTec.pageObjects.LoginPage;
 import twentySevenTec.pageObjects.MortgageRequirements;
 import twentySevenTec.pageObjects.ProductSelection;
@@ -37,7 +37,9 @@ public class TC_005_TwentySevenProductSearch extends twentySevenBaseClass{
 		captureScreen(driver);
 		Thread.sleep(3000);
 		PropertyDetails pd=new PropertyDetails(driver);
-		pd.GetPropertyDetails();	logger.info("Property details updated successfully");
+		pd.GetPropertyDetails();
+		Thread.sleep(5000);
+		logger.info("Property details updated successfully");
 		captureScreen(driver); 
 		SearchMortgageBtn();
 		
@@ -58,14 +60,14 @@ public class TC_005_TwentySevenProductSearch extends twentySevenBaseClass{
 		logger.info("Product Selection completed");
 		SelApplicationTypeFMA();
 		Thread.sleep(3000);
-		FMAEditApplication f1=new FMAEditApplication(driver);
+		EditApplicantDetails f1=new EditApplicantDetails(driver);
+		
 		f1.UpdateApplicantDetails();
 		f1.UpdateMortgageRequirements();
-		f1.UpdateDirectDebitDetails();
-		f1.UpdatePropertyDetails();
 		f1.UpdateEmploymentandIncomeDetails();
-		
-		
+		f1.updateCreditHistoryDetails();
+		f1.UpdatePropertyDetails();
+		f1.UpdateDirectDebitDetails();
 		
 		logger.info("Edited All details successfully");
 		

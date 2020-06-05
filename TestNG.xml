@@ -13,7 +13,7 @@
       <parameter name="browser" value="firefox"/>
       <classes>
       
-      	<class name="twentySevenTec.testCases.TC007_AddressConfirmation"/>
+      	<class name="twentySevenTec.testCases.AllDemoTesting"/>
 	       
   	 
       
@@ -24,7 +24,8 @@
         <!--  <class name="twentySevenTec.testCases.TC_005_TwentySevenProductSearch"/> -->
 	      <!-- <class name="twentySevenTec.testCases.TC_006_TwentySevenProductSelection"/> -->
 	      <!-- <class name="twentySevenTec.testCases.TC007_AddressConfirmation"/> -->
-       
+       <!-- <class name="twentySevenTec.testCases.AllDemoTesting"/> -->
+       <!--  -->
       
       </classes>
   </test> 

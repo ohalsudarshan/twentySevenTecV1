@@ -3,7 +3,7 @@ package twentySevenTec.testCases;
 import org.testng.annotations.Test;
 
 import twentySevenTec.pageObjects.ApplicantDetails;
-import twentySevenTec.pageObjects.FMAEditApplication;
+import twentySevenTec.pageObjects.EditApplicantDetails;
 import twentySevenTec.pageObjects.LoginPage;
 import twentySevenTec.pageObjects.MortgageRequirements;
 import twentySevenTec.pageObjects.ProductSelection;
@@ -39,7 +39,7 @@ public class TC007_AddressConfirmation extends twentySevenBaseClass{
 		ps.SelectChorleyBSProduct();
 		SelApplicationTypeFMA();
 		
-		FMAEditApplication ed=new FMAEditApplication(driver);
+		EditApplicantDetails ed=new EditApplicantDetails(driver);
 		ed.UpdateApplicantDetails();
 		
 		

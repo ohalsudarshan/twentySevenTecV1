@@ -9,6 +9,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -60,9 +61,9 @@ public class twentySevenBaseClass{
 			driver= new InternetExplorerDriver();
 		}
 				
-		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+//		driver.get(baseURL);
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		driver.manage().window().maximize();
 	}
 	
 	
@@ -111,7 +112,8 @@ public class twentySevenBaseClass{
 	
 	public void SearchMortgageBtn()
 	{
-		driver.findElement(By.xpath("/html/body/div[3]/div[1]/form/div[2]/div/div/div[3]/div/div/footer/section/button")).click();
+		driver.findElement(By.xpath("//button[@onclick='SearchMortgageProducts()']")).click();
+
 	}
 	
 	public void SelApplicationTypeFMA() throws Exception
@@ -145,33 +147,50 @@ public class twentySevenBaseClass{
 	
 	public void getAddress() throws InterruptedException, IOException
 	{
-		
-		driver.findElement(By.xpath("/html/body/div[3]/div[4]/div[2]/div/div[3]/form/div/div[2]/div[2]/div/div/fieldset/div/div/div[31]/div/div[1]/div/div[1]/span[2]/button")).click();
-		System.out.println("clicked on address");
-		Thread.sleep(3000);
-		
-		if(isAlertPresent()==true)
-		{
-			logger.info("on address details page");
-			Thread.sleep(3000);
-			driver.findElement(By.xpath("//*[@id=\"modalAddressform\"]/div[2]/div/fieldset/div[11]/div/button[1]")).click();
+		logger.info("on address details page");
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//button[contains(.,'Manually Set Address')]")).click();
 			captureScreen(driver);
 			System.out.println("Moved to address details page");
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			driver.findElement(By.id("FlatNumber")).sendKeys("1");
 			driver.findElement(By.id("BuildingName")).sendKeys("1 Warwick Apartments");
 			driver.findElement(By.id("BuildingNumber")).sendKeys("1");
 			driver.findElement(By.id("StreetName")).sendKeys("Warwick Place");
 			driver.findElement(By.id("Town")).sendKeys("Cheltenham");
 			driver.findElement(By.id("County")).sendKeys("Gloucestershire");
-			Thread.sleep(3000);
+			driver.findElement(By.id("PostCode")).sendKeys("GL52 2NP");
 			driver.findElement(By.id("CountryId_button")).click();
 			driver.findElement(By.linkText("United Kingdom")).click();
+//			Thread.sleep(2000);
+			driver.findElement(By.xpath("//button[contains(.,'Update Address')]")).click();
 			logger.info("Address Details updated successfully");
-		}
-	
-		
-		
+			Thread.sleep(2000);
 	}
+	
+	public void getBrokerFees() throws InterruptedException
+	{
+		logger.info("Click on Broker Fees");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[contains(@id,'Y8WfL71Wa06RMJhOgZUbHw_button')]")).click();
+		
+		
+		driver.findElement(By.linkText("Not Refundable")).click();
+		
+		logger.info("On Edit Broker Fees page");
+		
+		driver.findElement(By.xpath("(//label[@class='radio'][contains(.,'No')])[62]")).click();
+		driver.findElement(By.xpath("//button[@type='button'][contains(.,'Update Broker Fee')]")).click();
+	}
+	
+	public void ScrollByPixel() 
+	{
+     
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+
+	        // This  will scroll down the page by  1000 pixel vertical		
+	        js.executeScript("window.scrollBy(0,500)");
+
+    }
 	
 }

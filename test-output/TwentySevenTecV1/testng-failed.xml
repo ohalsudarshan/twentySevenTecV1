@@ -7,13 +7,13 @@
   <test thread-count="5" name="TwentySevenTec Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="twentySevenTec.testCases.TC007_AddressConfirmation">
+      <class name="twentySevenTec.testCases.AllDemoTesting">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="AddressConfirmation"/>
+          <include name="CheckAnything"/>
         </methods>
-      </class> <!-- twentySevenTec.testCases.TC007_AddressConfirmation -->
+      </class> <!-- twentySevenTec.testCases.AllDemoTesting -->
     </classes>
   </test> <!-- TwentySevenTec Test(failed) -->
 </suite> <!-- Failed suite [TwentySevenTecV1] -->

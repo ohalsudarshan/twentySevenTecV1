@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import twentySevenTec.testCases.twentySevenBaseClass;;
 
-public class ApplicantDetails {
+public class ApplicantDetails extends twentySevenBaseClass{
 	
 	WebDriver driver;
 	
@@ -27,9 +27,13 @@ public class ApplicantDetails {
 		driver.findElement(By.id("Client_Applicants_0__Title_button")).click();
 		driver.findElement(By.linkText("Mr")).click();
 		
-		driver.findElement(By.id("Client_Applicants_0__FirstNameDecrypted")).sendKeys("Sudarshan");
-		driver.findElement(By.id("Client_Applicants_0__MiddleNameDecrypted")).sendKeys("Dhondiba");
-		driver.findElement(By.id("Client_Applicants_0__LastNameDecrypted")).sendKeys("Ohal");
+		String firstname=randomString();
+		String midname=randomString();
+		String lastname=randomString();
+		
+		driver.findElement(By.id("Client_Applicants_0__FirstNameDecrypted")).sendKeys(firstname);
+		driver.findElement(By.id("Client_Applicants_0__MiddleNameDecrypted")).sendKeys(midname);
+		driver.findElement(By.id("Client_Applicants_0__LastNameDecrypted")).sendKeys(lastname);
 		
 		driver.findElement(By.id("Client_Applicants_0__Gender_button")).click();
 		driver.findElement(By.linkText("Male")).click();
