@@ -9,7 +9,7 @@ import twentySevenTec.pageObjects.ApplicantDetails;
 public class TC_003_TwentySevenApplicantDetails extends twentySevenBaseClass{
 	
 	@Test
-	public void ApplicantDetails() throws Exception 
+	public void ApplicantDetailsMulti() throws Exception 
 	{
 		LoginPage lp=new LoginPage(driver);
 		lp.setUsername(username);

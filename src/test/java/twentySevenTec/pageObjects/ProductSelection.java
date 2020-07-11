@@ -31,4 +31,20 @@ public class ProductSelection {
 		Thread.sleep(3000);	
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
+	
+	public void SelectHSBCProduct() throws Exception
+	{	
+		Thread.sleep(3000);	
+		driver.findElement(By.id("mortgageLenderFilter_button")).click();
+		driver.findElement(By.linkText("HSBC")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[3]/div[1]/form/section/div[1]/article/div/div/div/div[3]/div/table/tbody/tr[1]")).click();
+		Thread.sleep(3000);	
+		System.out.println("Product Selection Completed");
+		
+		driver.findElement(By.id("btn-apply-for-mortgage-available")).click();
+		driver.findElement(By.id("bot2-Msg1")).click();
+		Thread.sleep(3000);	
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	}
 }

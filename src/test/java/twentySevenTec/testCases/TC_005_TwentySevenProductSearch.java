@@ -61,14 +61,6 @@ public class TC_005_TwentySevenProductSearch extends twentySevenBaseClass{
 		SelApplicationTypeFMA();
 		Thread.sleep(3000);
 		EditApplicantDetails f1=new EditApplicantDetails(driver);
-		
-		f1.UpdateApplicantDetails();
-		f1.UpdateMortgageRequirements();
-		f1.UpdateEmploymentandIncomeDetails();
-		f1.updateCreditHistoryDetails();
-		f1.UpdatePropertyDetails();
-		f1.UpdateDirectDebitDetails();
-		
 		logger.info("Edited All details successfully");
 		
 	}

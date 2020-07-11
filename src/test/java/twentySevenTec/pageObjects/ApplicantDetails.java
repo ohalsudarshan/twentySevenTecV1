@@ -54,16 +54,6 @@ public class ApplicantDetails extends twentySevenBaseClass{
 		driver.findElement(By.id("Client_Applicants_0__WorkPhoneDecrypted")).sendKeys("09028040508");
 		driver.findElement(By.id("Client_Applicants_0__MobilePhoneDecrypted")).sendKeys("09028040509");
 		driver.findElement(By.id("Client_Applicants_0__EmailDecrypted")).sendKeys("Sud@gmail.com");
-		
-//		driver.findElement(By.xpath("//*[@id=\"manualEditButton1\"]/i")).click();
-//		driver.findElement(By.id("Client_Applicants_0__PostcodeDecrypted")).sendKeys("GL52 2NP");
-//		driver.findElement(By.id("Client_Applicants_0__FlatNumberDecrypted")).sendKeys("1");
-//		driver.findElement(By.id("Client_Applicants_0__BuildingNameDecrypted")).sendKeys("Kaveri Niwas");
-//		driver.findElement(By.id("Client_Applicants_0__BuildingNumberDecrypted")).sendKeys("1");
-//		driver.findElement(By.id("Client_Applicants_0__StreetNameDecrypted")).sendKeys("Chinchwad");
-//		driver.findElement(By.id("Client_Applicants_0__TownDecrypted")).sendKeys("Pune");
-//		driver.findElement(By.id("Client_Applicants_0__CountyDecrypted")).sendKeys("MH");
-	
 	}
 	
 	public void getEmploymentDetails() throws InterruptedException
@@ -142,9 +132,7 @@ public class ApplicantDetails extends twentySevenBaseClass{
 	 
 	 
 	//	driver.findElement(By.xpath("//*[@id=\"hr1\"]/div/div/footer/section/button")).click();
-	System.out.println("Logged in Successfully using excel data");
-	
-		
+		System.out.println("Logged in Successfully using excel data");
 	}
 	
 }

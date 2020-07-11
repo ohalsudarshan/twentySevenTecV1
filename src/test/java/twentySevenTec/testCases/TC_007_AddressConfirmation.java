@@ -9,7 +9,7 @@ import twentySevenTec.pageObjects.MortgageRequirements;
 import twentySevenTec.pageObjects.ProductSelection;
 import twentySevenTec.pageObjects.PropertyDetails;
 
-public class TC007_AddressConfirmation extends twentySevenBaseClass{
+public class TC_007_AddressConfirmation extends twentySevenBaseClass{
 	
 	
 	@Test
@@ -40,7 +40,7 @@ public class TC007_AddressConfirmation extends twentySevenBaseClass{
 		SelApplicationTypeFMA();
 		
 		EditApplicantDetails ed=new EditApplicantDetails(driver);
-		ed.UpdateApplicantDetails();
+		ed.EditApplicantInfo();
 		
 		
 		

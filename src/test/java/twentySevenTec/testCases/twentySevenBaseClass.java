@@ -3,7 +3,6 @@ package twentySevenTec.testCases;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
@@ -17,8 +16,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.internal.MouseAction.Button;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -52,6 +55,7 @@ public class twentySevenBaseClass{
 		}
 		else if(br.equals("firefox"))
 		{
+			
 			System.setProperty("webdriver.gecko.driver",rc.getFirefoxpath());
 			driver= new FirefoxDriver();
 		}
@@ -61,9 +65,9 @@ public class twentySevenBaseClass{
 			driver= new InternetExplorerDriver();
 		}
 				
-//		driver.get(baseURL);
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//		driver.manage().window().maximize();
+		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	}
 	
 	
@@ -145,6 +149,21 @@ public class twentySevenBaseClass{
 		captureScreen(driver);
 	}
 	
+	public void ClickonApplyandStartButton() throws InterruptedException
+	{
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[contains(@id,'btn-apply-for-mortgage-available')]")).click();		// Click on Apply Button
+		driver.findElement(By.xpath("//button[contains(@id,'bot2-Msg1')]")).click();		//Click on start Application
+		Thread.sleep(3000);
+	}
+	
+	public void ClickOnEditApplication() throws InterruptedException
+	{
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//i[contains(@class,'fa fa-edit fa-2x')]")).click();			//Edit Application
+		logger.info("Clicked on Edit Application");
+	}
+	
 	public void getAddress() throws InterruptedException, IOException
 	{
 		logger.info("on address details page");
@@ -193,4 +212,81 @@ public class twentySevenBaseClass{
 
     }
 	
+	public void ScrollByPixelUp() 
+	{
+     
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+
+	        // This  will scroll down the page by  1000 pixel vertical		
+	        js.executeScript("window.scrollBy(0,-500)");
+
+    }
+	
+	public void explicitlywait(String xpath)
+	{
+		WebDriverWait expwait=new WebDriverWait(driver, 50);
+	 	WebElement e1=expwait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+	 	e1.click();
+	 	logger.info("waited and moved ahead");
+	}
+	
+	public void ClickOnSaveButton() throws InterruptedException
+	{
+		driver.findElement(By.xpath("//a[@href='javascript:SaveApplication();']")).click();
+		Thread.sleep(5000);
+		logger.info("Clicked on Saved Button");
+	}
+	
+	public void ClickOnValidate() throws InterruptedException
+	{
+		driver.findElement(By.xpath("//a[@href='javascript:ValidateApplication();']")).click();
+		Thread.sleep(5000);
+		logger.info("Clicked on Validate Application");
+		
+		String Successtext=driver.findElement(By.xpath("(//h4[contains(.,'Success')])[1]")).getText();
+		
+		System.out.println(Successtext);
+		
+	}
+	
+	public void ClickOnSubmitApplication() throws InterruptedException
+	{
+		driver.findElement(By.xpath("(//span[contains(.,'Submit')])[1]")).click();
+		driver.findElement(By.xpath("//button[contains(@id,'bot2-Msg1')]")).click();
+		Thread.sleep(5000);
+		logger.info("Clicked on Submit Application");
+		String SubmittedTitle= driver.getTitle();
+		
+		if(driver.getTitle().equalsIgnoreCase(SubmittedTitle))
+		{
+			logger.info("Application Submitted Successfully");
+		}
+		else
+		{
+			logger.info("Application Not Submitted");
+		}
+		
+		driver.findElement(By.xpath("//span[contains(.,'Back to Summary')]")).click();
+		Thread.sleep(2000);
+		
+		String getApplyID=driver.findElement(By.xpath("@FindBy(xpath = \"//span[contains(.,'APPLY Id:')]\")")).getText();		
+		logger.info("27Tec ApplyID: "+getApplyID);
+		
+		String getLenderCaseRef=driver.findElement(By.xpath("@FindBy(xpath = \"//span[contains(.,'Lender Case Ref #:')]\")")).getText();
+		logger.info("Lender Case Reference: "+getLenderCaseRef);
+	}
+	
+	
+	public void dropDown(String id, String linkText)
+	{
+		driver.findElement(By.id(id)).click();
+		driver.findElement(By.linkText(linkText)).click();
+		logger.info(linkText);
+	}
+	
+	public void sendkeys(String id, String value, String infotoprint)
+	{
+		driver.findElement(By.id(id)).sendKeys(value);
+		logger.info(infotoprint);
+	}
 }

@@ -13,10 +13,9 @@
       <parameter name="browser" value="firefox"/>
       <classes>
       
-      	<class name="twentySevenTec.testCases.AllDemoTesting"/>
+   		<class name="twentySevenTec.testCases.TC_014_PurchaseMultiApplicantFMAChorleyBS"/>
+
 	       
-  	 
-      
       <!-- <class name="twentySevenTec.testCases.TC_001_TwentySevenTecLogin"/>  -->
        <!-- <class name="twentySevenTec.testCases.TC_002_TwentySevenMortgageRequirements"/>  -->
        <!--  <class name="twentySevenTec.testCases.TC_003_TwentySevenApplicantDetails"/>   -->
@@ -24,6 +23,12 @@
         <!--  <class name="twentySevenTec.testCases.TC_005_TwentySevenProductSearch"/> -->
 	      <!-- <class name="twentySevenTec.testCases.TC_006_TwentySevenProductSelection"/> -->
 	      <!-- <class name="twentySevenTec.testCases.TC007_AddressConfirmation"/> -->
+	      <!-- <class name="twentySevenTec.testCases.TC_011_PurchaseSingleApplicantFMAChorleyBS"/> -->
+	      <!-- <class name="twentySevenTec.testCases.TC_012_PurchaseSingleApplicantDIPChorleyBS"/> -->
+	      <!-- <class name="twentySevenTec.testCases.TC_008_TwentySevenMultiApplicantDetailsEmployedandSelfEmployedEmployment"/> -->
+       <!-- <class name="twentySevenTec.testCases.TC_013_PurchaseMultiApplicantDIPChorleyBS"/> -->
+         <!-- <class name="twentySevenTec.testCases.TC_014_PurchaseMultiApplicantFMAChorleyBS"/> -->
+	      <!-- <class name="twentySevenTec.testCases.TC_008_TC_008_TwentySevenMultiApplicantDetailsEmployedandSelfEmployedEmployment"/> -->
        <!-- <class name="twentySevenTec.testCases.AllDemoTesting"/> -->
        <!--  -->
       
